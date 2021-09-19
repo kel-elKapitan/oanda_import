@@ -13,14 +13,14 @@ import oandapyV20.endpoints.instruments as instruments
 
 start_datetime = datetime(1990, 1, 1)
 timeframe = "D"
-
+my_access_token = " "
 
 # function to find the latest or most up to date timestamp
 
 def OANDA_Connection_Latest(pair):
     global timeframe
 
-    client = oandapyV20.API(access_token="52c76cd5bb522b392fb63558f77e38d1-c40a4e5881e371e56eef06276566f9b5")
+    client = oandapyV20.API(access_token=my_access_token)
 
     params = {"count": 1, "granularity": timeframe}
 
@@ -48,7 +48,7 @@ def OANDA_Connection_Latest(pair):
 
 def OANDA_Connection(active_datetime, pair):
     global timeframe
-    client = oandapyV20.API(access_token="52c76cd5bb522b392fb63558f77e38d1-c40a4e5881e371e56eef06276566f9b5")
+    client = oandapyV20.API(access_token=my_access_token)
     params = {"from": active_datetime, "count": 5000, "granularity": timeframe}
     
     r = instruments.InstrumentsCandles(instrument=pair, params=params)
