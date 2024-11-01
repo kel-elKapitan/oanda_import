@@ -1,3 +1,5 @@
+# PANDAS Version <2 only 
+
 ## Retrieve data from oanda.com rest API v20
 ## Background
 This repo imports currency pair prices for 7 instruments provided by oanda.com
