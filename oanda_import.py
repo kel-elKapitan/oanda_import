@@ -13,7 +13,7 @@ import oandapyV20.endpoints.instruments as instruments
 
 start_datetime = datetime(1990, 1, 1)
 timeframe = "D"
-my_access_token = "c49461616d83b16e43fe7d192b6ccb07-cbb08973f2faa3f32ccc2bfa74103a58"
+my_access_token = ""
 
 # function to find the latest or most up to date timestamp
 
